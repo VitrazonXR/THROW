@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#dbe3ed"><title>THROW. | Little hands, big decisions.</title><style>
+:root{--bg:#dbe3ed;--panel:#f5f8fc;--ink:#283950;--muted:#77899c;--line:#ced8e4;--blue:#5d89be;--darkblue:#3d648f;--sky:#b7d6ed;--aqua:#4baaa8;--amber:#d59a64;--red:#ce737b;--shadow:0 22px 60px rgba(44,71,103,.10),0 4px 12px rgba(44,71,103,.04);color-scheme:light;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;}body{background:radial-gradient(ellipse at 19% 4%,#edf3fa 0%,transparent 35%),radial-gradient(ellipse at 88% 92%,#becfe0 0%,transparent 38%),var(--bg);color:var(--ink);overflow-x:hidden}button,input{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}button:disabled{cursor:not-allowed;opacity:.48}button:focus-visible,input:focus-visible{outline:3px solid #91b5de;outline-offset:3px}button:active:not(:disabled){transform:translateY(1px)}.site{min-height:100vh;display:flex;flex-direction:column;max-width:1440px;margin:auto;padding:22px clamp(20px,4vw,60px) 18px;position:relative}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px}.brand{display:flex;align-items:center;gap:12px;font-size:24px;font-weight:900;letter-spacing:-1.7px;user-select:none}.brand-icon{display:grid;place-items:center;width:36px;height:36px;background:#3e5a79;border-radius:13px;transform:rotate(-8deg);box-shadow:0 4px 9px #8aa3be66;color:white;font-size:20px;line-height:1}.brand-icon span{transform:rotate(8deg)}.brand .period{color:#629bc5}.topright{display:flex;align-items:center;gap:12px}.status{font-weight:700;font-size:12px;display:flex;align-items:center;gap:7px;color:#61768c;background:#f0f5f9c9;padding:9px 12px;border:1px solid #cbd8e3;border-radius:99px}.dot{width:7px;height:7px;border-radius:50%;background:#a1adb9;box-shadow:0 0 0 3px #a1adb922}.status.online .dot{background:#58b6a2;box-shadow:0 0 0 3px #58b6a222}.status.offline .dot{background:#d98786;box-shadow:0 0 0 3px #d9878622}.quietbtn{border:1px solid #c8d3df;background:#edf3f9b8;color:#546f8b;border-radius:12px;padding:10px 13px;font-weight:750}.quietbtn:hover{background:#fff}.central{flex:1;display:flex;align-items:center;justify-content:center;padding:36px 0}.view{width:100%;animation:appear .35s ease both}@keyframes appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}.hide{display:none!important}.homegrid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(330px,.96fr);gap:clamp(18px,4vw,60px);align-items:center;max-width:1170px;margin:0 auto}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:850;color:#708daa;margin-bottom:21px}.display{font-size:clamp(55px,6.7vw,96px);font-weight:860;letter-spacing:-6px;line-height:.98;margin:0 0 24px}.display em{font-style:normal;color:#668cb4}.subtitle{max-width:445px;color:#667d93;font-size:18px;line-height:1.65;margin:0 0 32px}.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.btn{border:1px solid #c7d4e3;background:#f5f9fd;color:#455f7a;border-radius:15px;padding:15px 23px;font-weight:790;box-shadow:0 4px 12px #34485a0b;transition:background .15s,box-shadow .15s}.btn:hover:not(:disabled){background:white;box-shadow:0 8px 16px #34485a16}.btn.primary{background:#496f98;color:white;border-color:#496f98;box-shadow:0 6px 14px #395e8a26}.btn.primary:hover:not(:disabled){background:#365d86}.btn.soft{background:#e5edf5}.btn.danger{background:#eaf0f7;border-color:#bccddd;color:#6e7f92}.btn.small{padding:10px 14px;border-radius:12px;font-size:13px}.arrow{margin-left:22px;font-size:18px}.demo{min-height:365px;display:flex;align-items:center;justify-content:center;position:relative}.demo:before{content:"";position:absolute;inset:22px 28px;border:1px dashed #9ab0c5;border-radius:36px;opacity:.6}.mini-card{width:155px;height:216px;position:absolute;border:1px solid #d8e1ec;background:#f7fafde8;border-radius:26px;box-shadow:0 20px 28px #52677e24;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;backdrop-filter:blur(8px)}.mini-card:nth-child(1){transform:translate(-126px,20px) rotate(-12deg)}.mini-card:nth-child(2){transform:translate(0,-18px) rotate(1deg);z-index:2}.mini-card:nth-child(3){transform:translate(130px,20px) rotate(11deg)}.mini-card span{font-weight:850;letter-spacing:.2px}.mini-card svg{height:125px;width:125px}.float-tag{position:absolute;bottom:15px;right:11px;font-size:11px;font-weight:850;color:#557a99;background:#e9f2fb;border:1px solid #c9d7e6;padding:9px 13px;border-radius:12px;transform:rotate(7deg);z-index:3}.foot{display:flex;justify-content:space-between;gap:12px;color:#8c9fb0;font-size:11px;font-weight:700;letter-spacing:.2px;padding-top:12px}.foot a{color:inherit}.section{max-width:820px;margin:0 auto}.center{text-align:center}.section h1{font-size:clamp(32px,4.7vw,53px);letter-spacing:-2.3px;line-height:1.12;margin:0 0 12px}.hintline{color:#7b8ea0;font-size:15px;line-height:1.6;margin:0 auto 28px;max-width:520px}.modegrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:650px;margin:0 auto 25px}.modecard{padding:29px;min-height:207px;background:#f7fafe9c;border:1px solid #cbd8e6;box-shadow:var(--shadow);border-radius:24px;text-align:left;transition:transform .16s,background .16s}.modecard:hover{background:#fff;transform:translateY(-4px)}.modecard .bubble{font-size:27px;display:grid;place-items:center;height:57px;width:57px;border-radius:18px;background:#ddebf7;margin-bottom:20px}.modecard b{font-size:21px;letter-spacing:-.7px}.modecard p{font-size:13px;color:#7e90a3;margin:8px 0 0;line-height:1.5}.panel{background:#f7f9fce0;border:1px solid #cfdae6;border-radius:25px;padding:30px;box-shadow:var(--shadow)}.formpanel{max-width:480px;margin:0 auto}.formpanel .field{display:block;text-align:left;margin:19px 0}.field label{font-size:11px;font-weight:850;letter-spacing:1px;color:#7489a0;text-transform:uppercase;display:block;margin-bottom:9px}.field input{width:100%;font-size:17px;font-weight:650;letter-spacing:.2px;padding:15px 17px;border:1px solid #c9d6e4;background:white;border-radius:13px;color:#30485f;outline:none}.field input:focus{border-color:#6c9acc;box-shadow:0 0 0 4px #a4c2df46}.field input.code{text-align:center;font-size:27px;letter-spacing:7px;font-weight:900;text-transform:uppercase}.full{width:100%}.underlink{font-size:13px;color:#738ca6;font-weight:750;margin:22px auto 0;background:none;border:0;text-decoration:underline;text-underline-offset:4px}.errorline{color:#b66068;font-size:13px;min-height:15px;text-align:center;margin:6px 0}.roomhead{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:850px;margin:0 auto 25px}.roomhead h1{font-size:clamp(34px,4vw,50px);letter-spacing:-2.5px;margin:0 0 8px}.roomhead p{color:#7b8fa3;margin:0}.badge{background:#e5eef7;padding:8px 11px;border-radius:9px;font-size:10px;font-weight:900;color:#6284a3;letter-spacing:1px;white-space:nowrap}.lobbygrid{display:grid;grid-template-columns:340px minmax(300px,1fr);gap:17px;max-width:850px;margin:0 auto}.joincode{padding:26px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px}.tinylabel{font-size:10px;font-weight:900;letter-spacing:1.8px;color:#8ba0b4}.bigcode{font-weight:900;font-size:43px;letter-spacing:6px;color:#3f638b}.memberpanel{padding:23px}.memberpanel h3{margin:0 0 15px;font-size:15px}.memberlist{display:flex;flex-direction:column;gap:9px;max-height:300px;overflow:auto}.member{display:flex;align-items:center;gap:11px;padding:10px;border-radius:12px;background:#eaf0f6;border:1px solid #dae4ed}.avatar{background:#c8dcef;color:#456f99;border-radius:12px;display:grid;place-items:center;width:36px;height:36px;flex:none;font-weight:900}.member .name{font-size:13px;font-weight:810}.member .role{margin-left:auto;font-size:10px;font-weight:850;letter-spacing:.6px;color:#6986a2}.member .muted{color:#9facbc}.lobbybottom{max-width:850px;margin:22px auto 0;display:flex;align-items:center;justify-content:space-between;gap:12px}.lobbybottom p{color:#7890a5;font-size:12px}.match{max-width:1180px;margin:auto}.gamebar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}.gamebar .round{font-size:11px;font-weight:900;letter-spacing:1.5px;color:#6985a0}.timerchip{min-width:102px;display:flex;align-items:center;gap:12px;background:#f4f8fcdd;border:1px solid #cbd9e6;border-radius:99px;padding:9px 14px}.timerchip b{font-size:23px;font-variant-numeric:tabular-nums;letter-spacing:-1px}.timerchip small{font-size:10px;line-height:1.2;color:#758ba0;font-weight:850;letter-spacing:.4px}.timerdot{width:9px;height:9px;border-radius:100%;background:#6da9d6;box-shadow:0 0 0 4px #bcd9ed}.timerdot.urgent{background:#ce7e77;box-shadow:0 0 0 4px #e9c3be}.gamegrid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:20px;align-items:start}.playpanel{background:#f6f9fdc9;border:1px solid #cddae8;box-shadow:var(--shadow);border-radius:28px;min-height:510px;padding:clamp(20px,3vw,39px);position:relative;overflow:hidden}.playpanel:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#d9e7f370,transparent 65%);pointer-events:none}.panelinner{position:relative;z-index:1}.step{font-size:11px;font-weight:880;letter-spacing:1.6px;color:#7595b5;text-transform:uppercase;margin-bottom:8px}.pick-title{font-size:clamp(26px,3vw,38px);letter-spacing:-1.5px;margin:0 0 7px;font-weight:870}.pick-sub{margin:0 0 27px;color:#8a9eb1;font-size:13px}.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.pick{border:2px solid #d5e1ed;background:#f8fbfe;border-radius:22px;min-height:239px;display:flex;align-items:center;flex-direction:column;justify-content:space-around;padding:15px 10px 19px;transition:transform .13s,border-color .15s,background .15s,box-shadow .15s;color:#3a5168}.pick:hover:not(:disabled){transform:translateY(-6px);border-color:#8cafd1;box-shadow:0 12px 24px #7a9cb326}.pick.chosen{background:#e2f1f9;border-color:#5d9fbe;box-shadow:0 0 0 4px #bcd9ecaa}.pick:disabled{opacity:.8}.pick svg{width:min(100%,160px);height:150px;filter:drop-shadow(0 10px 7px #7791ad1a)}.pick b{font-size:17px;font-weight:850}.pick small{font-weight:750;font-size:10px;color:#9bb0c2;margin-top:-8px}.choicehint{text-align:center;font-size:11px;color:#8ca2b5;margin-top:24px}.sidepanel{padding:21px;background:#f6f9fdc6;border:1px solid #cddae8;border-radius:23px;box-shadow:var(--shadow)}.sidepanel h3{font-size:13px;letter-spacing:.1px;margin:0 0 16px}.leaderrow{display:flex;align-items:center;gap:9px;padding:11px 0;border-bottom:1px solid #e0e7f0}.leaderrow:last-child{border-bottom:0}.rank{font-size:11px;font-weight:850;color:#90a0af;width:16px}.leadname{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px;font-weight:750}.leadscore{font-weight:850;font-size:14px;font-variant-numeric:tabular-nums}.you{color:#448ab4}.votebar{margin-top:18px;position:sticky;bottom:9px;z-index:3;backdrop-filter:blur(12px);padding:12px 17px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#edf3f8c7;border:1px solid #cddae5;border-radius:17px}.votebar .lefttext{font-size:12px;font-weight:750;color:#66809b}.votebar .sub{font-size:10px;color:#8da1b4;margin-top:4px}.vote-active{background:#d6ece8!important;color:#377d76!important;border-color:#8cbbb5!important}.resultgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:11px;max-height:430px;overflow-y:auto;padding-right:4px}.resultcard{display:flex;flex-direction:column;align-items:center;gap:6px;position:relative;background:#f9fbfedc;border:1px solid #d5e0e9;border-radius:18px;padding:17px 10px;min-width:0}.resultcard.youcard{border:2px solid #91bad5;background:#edf6fc}.resultcard svg{height:95px;width:105px}.resultcard strong{font-size:13px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.resultcard span{font-size:11px;color:#8197ab;font-weight:750}.diff{font-size:19px;font-weight:900!important}.positive{color:#43948d!important}.negative{color:#cb7779!important}.neutral{color:#8b9ba8!important}.autopick{position:absolute;top:7px;right:9px;font-size:9px!important;letter-spacing:.5px}.ending{max-width:620px;margin:auto}.endpanel{text-align:center}.trophy{font-size:49px;line-height:1.4}.final-list{margin:25px 0;display:flex;flex-direction:column;gap:9px}.final-row{display:flex;align-items:center;gap:12px;padding:15px 17px;background:#eaf0f7;border:1px solid #dce5ef;border-radius:14px;text-align:left}.final-row:first-child{background:#e7f1f6;border-color:#aed1e0}.medal{font-size:18px;width:28px}.final-row .who{flex:1;font-size:15px;font-weight:800}.final-row .points{font-size:17px;font-weight:900;font-variant-numeric:tabular-nums}.endnote{color:#7a91a7;font-size:13px;margin:0 0 26px}.overlay{position:fixed;inset:0;background:#26384a5e;backdrop-filter:blur(6px);z-index:10;display:flex;align-items:center;justify-content:center;padding:20px}.modal{background:#f5f9fc;border:1px solid #d0dce7;box-shadow:0 40px 90px #1d354e55;max-width:470px;width:100%;border-radius:25px;padding:28px}.modal h2{margin:0 0 10px;font-size:28px;letter-spacing:-1px}.modal p{color:#738ba0;font-size:14px;line-height:1.6}.switchrow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px solid #e0e9f1;font-size:14px;font-weight:730}.switchrow input{accent-color:#578db2;width:18px;height:18px}.smallprint{font-size:12px!important;color:#8497aa!important}.toast{position:fixed;left:50%;bottom:35px;transform:translateX(-50%);background:#31475d;color:white;padding:12px 18px;border-radius:12px;font-weight:700;font-size:13px;z-index:30;box-shadow:0 10px 40px #14253936;max-width:calc(100vw - 30px);text-align:center}.waiting{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:380px;text-align:center}.dots{font-weight:900;font-size:30px;letter-spacing:9px;color:#7498ba;animation:pulse 1.3s infinite}@keyframes pulse{50%{opacity:.4}}@media(max-width:850px){.homegrid{grid-template-columns:1fr;text-align:center;gap:10px}.homegrid .subtitle{margin-left:auto;margin-right:auto}.homegrid .actions{justify-content:center}.demo{min-height:280px}.mini-card{width:132px;height:178px}.mini-card svg{height:110px;width:110px}.mini-card:nth-child(1){transform:translate(-112px,8px) rotate(-12deg)}.mini-card:nth-child(3){transform:translate(112px,8px) rotate(11deg)}.gamegrid{grid-template-columns:1fr}.sidepanel{order:2}.playpanel{min-height:420px}.lobbygrid{grid-template-columns:1fr}.joincode{min-height:190px}}
+@media(max-width:560px){.site{padding:13px 13px 17px}.status{font-size:0;padding:10px}.status .dot{width:9px;height:9px}.brand{font-size:22px}.central{padding:23px 0}.display{font-size:57px;letter-spacing:-3px}.subtitle{font-size:15px}.demo{min-height:235px}.mini-card{width:112px;height:161px;border-radius:20px}.mini-card svg{width:99px;height:100px}.mini-card:nth-child(1){transform:translate(-91px,9px) rotate(-12deg)}.mini-card:nth-child(3){transform:translate(91px,9px) rotate(11deg)}.float-tag{bottom:2px}.modegrid{gap:10px}.modecard{padding:18px;min-height:190px}.modecard b{font-size:17px}.modecard .bubble{margin-bottom:16px}.panel{padding:22px}.gamebar{align-items:flex-end}.playpanel{padding:16px;border-radius:19px;min-height:380px}.pick{min-height:190px;padding:9px 3px;border-radius:14px}.pick svg{height:112px}.pick b{font-size:13px}.picks{gap:6px}.roomhead{align-items:flex-start}.roomhead h1{font-size:36px}.votebar .lefttext{font-size:11px}.votebar{padding:9px}.foot{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style></head><body>
+<div class="site"><header class="topbar"><div class="brand"><span class="brand-icon"><span>✦</span></span> THROW<span class="period">.</span></div><div class="topright"><span id="status" class="status"><span class="dot"></span><span id="statusTxt">Connecting</span></span><button class="quietbtn" id="settingsOpen" aria-label="Settings">⚙ &nbsp;Settings</button></div></header>
+<main class="central" id="root"></main><footer class="foot"><span>BROWSER MULTIPLAYER · INTERNET REQUIRED</span><span>Chromebook ready · No installs · 2–12 players</span></footer></div>
+<div class="overlay hide" id="settingsOverlay" role="dialog" aria-modal="true" aria-label="Settings"><div class="modal"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h2>Preferences</h2><button class="quietbtn" id="settingsClose" aria-label="Close settings">✕</button></div><p>Keep the competition friendly. Or don't. Your call.</p><label class="switchrow"><span>Sound effects</span><input id="soundToggle" type="checkbox" checked></label><label class="switchrow"><span>Reduced motion</span><input id="motionToggle" type="checkbox"></label><label class="switchrow"><span>Show keyboard tips</span><input id="tipsToggle" type="checkbox" checked></label><p class="smallprint">Use R, P, or S to choose during a round. Every match has a 3-second decision timer, then a reveal. Scores update once per opponent.</p><button class="btn primary full" id="settingsDone" style="margin-top:15px">Done</button></div></div>
+<div id="toast" class="toast hide"></div>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.5/dist/peerjs.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/peerjs@1.5.5/dist/peerjs.min.js'"></script>
+<script>
+(()=>{'use strict';
+const $=(s,r=document)=>r.querySelector(s);const root=$('#root');
+const KEY='throw-pref-v1', SESSION='throw-peer-session-v2';
+function storageGet(key){try{return localStorage.getItem(key)}catch(e){return null}}
+function storageSet(key,v){try{localStorage.setItem(key,v)}catch(e){}}
+function sessionSet(key,v){try{sessionStorage.setItem(key,v)}catch(e){}}
+function sessionRemove(key){try{sessionStorage.removeItem(key)}catch(e){}}
+let prefs={sound:true,reduce:false,tips:true};try{prefs={...prefs,...JSON.parse(storageGet(KEY)||'{}')}}catch(e){}
+let connected=false,view='home',mode='host',roomState=null,mySession=null,clockOffset=0,manuallyLeft=false;
+let peer=null,guestConn=null,hostRoom=null,peerError='';let linkTimeout=null,roundTimer=null;const hostLinks=new Map();let awaitingHost=false;
+let toastTimeout=null,audio=null,lastPhase=null,lastRound=0,lastChosen=null,formError='',draftCode='';
+// Sessions are ephemeral: browser tab hosts the multiplayer room.
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+const iconPaths={
+rock:`<svg viewBox="0 0 160 150" aria-hidden="true"><ellipse cx="81" cy="134" rx="49" ry="8" fill="#bed1e2" opacity=".58"/><path d="M32 98 Q24 80 39 58 L60 41 Q73 27 98 39 L124 55 Q142 76 130 105 L109 124 Q75 139 47 120 Z" fill="#8fa9c4" stroke="#597896" stroke-width="4" stroke-linejoin="round"/><path d="M38 74 L60 44 Q75 32 98 40 L109 52 L67 73 Z" fill="#c3d4e6" opacity=".85"/><path d="M67 73 L109 52 L129 76 L113 97 L56 99Z" fill="#a5bed5"/><path d="M56 99 L113 97 L108 123 Q80 133 49 119Z" fill="#7e9ab7"/><path d="M54 66 L67 56" stroke="#e0edfa" stroke-width="4" stroke-linecap="round"/><ellipse cx="70" cy="91" rx="5" ry="7" fill="#39536c"/><ellipse cx="103" cy="90" rx="5" ry="7" fill="#39536c"/><path d="M77 108 Q86 117 96 108" stroke="#38516b" stroke-width="3.5" fill="none" stroke-linecap="round"/><circle cx="57" cy="103" r="6" fill="#d5b3c2" opacity=".6"/><circle cx="115" cy="104" r="6" fill="#d5b3c2" opacity=".6"/></svg>`,
+paper:`<svg viewBox="0 0 160 150" aria-hidden="true"><ellipse cx="80" cy="139" rx="44" ry="7" fill="#bed1e2" opacity=".58"/><path d="M48 20 Q63 13 82 21 L115 23 Q126 27 123 43 L126 113 Q125 128 111 131 L51 130 Q38 124 40 106 L38 37 Q37 26 48 20Z" fill="#fffefa" stroke="#7898b4" stroke-width="4" stroke-linejoin="round"/><path d="M48 20 Q69 31 89 22 L113 23" fill="none" stroke="#cfe1ef" stroke-width="3"/><path d="M53 48 H107 M53 59 H104 M53 70 H95" stroke="#c3d5e5" stroke-width="4" stroke-linecap="round"/><ellipse cx="64" cy="99" rx="5" ry="7" fill="#3d5c75"/><ellipse cx="101" cy="99" rx="5" ry="7" fill="#3d5c75"/><path d="M71 111 Q82 120 93 111" fill="none" stroke="#39546f" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="49" cy="111" rx="7" ry="5" fill="#e9b9be" opacity=".63"/><ellipse cx="116" cy="111" rx="7" ry="5" fill="#e9b9be" opacity=".63"/><path d="M114 32 L114 51" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>`,
+scissors:`<svg viewBox="0 0 160 150" aria-hidden="true"><ellipse cx="81" cy="137" rx="48" ry="7" fill="#bed1e2" opacity=".58"/><path d="M79 85 L126 26 Q133 20 135 30 L110 91 L89 99Z" fill="#d0e0ed" stroke="#6889a6" stroke-width="3" stroke-linejoin="round"/><path d="M77 82 L35 26 Q29 19 25 30 L46 90 L65 100Z" fill="#b1c8dd" stroke="#6889a6" stroke-width="3" stroke-linejoin="round"/><path d="M42 42 L74 82" stroke="#e9f5fe" stroke-width="3"/><path d="M120 42 L86 82" stroke="#f2fbff" stroke-width="3"/><circle cx="56" cy="117" r="21" fill="#eda5a0" stroke="#bc797e" stroke-width="4"/><circle cx="106" cy="117" r="21" fill="#eda5a0" stroke="#bc797e" stroke-width="4"/><circle cx="56" cy="117" r="10" fill="#f7faff"/><circle cx="106" cy="117" r="10" fill="#f7faff"/><path d="M63 88 L77 74 L94 88 L99 102 L77 113 L64 103 Z" fill="#7d9dbb" stroke="#597c9c" stroke-width="3"/><circle cx="74" cy="92" r="3.5" fill="#344e68"/><circle cx="88" cy="92" r="3.5" fill="#344e68"/><path d="M76 102 Q82 107 88 102" fill="none" stroke="#344e68" stroke-width="2.5" stroke-linecap="round"/></svg>`};
+function sound(freq=540,kind='sine',duration=.09){if(!prefs.sound)return;try{audio??=new (window.AudioContext||window.webkitAudioContext)();if(audio.state==='suspended')audio.resume();const o=audio.createOscillator(),gain=audio.createGain();o.type=kind;o.frequency.setValueAtTime(freq,audio.currentTime);o.frequency.exponentialRampToValueAtTime(freq*.74,audio.currentTime+duration);gain.gain.setValueAtTime(.09,audio.currentTime);gain.gain.exponentialRampToValueAtTime(.0005,audio.currentTime+duration);o.connect(gain).connect(audio.destination);o.start();o.stop(audio.currentTime+duration)}catch(e){}}
+function toast(msg){const el=$('#toast');el.textContent=msg;el.classList.remove('hide');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>el.classList.add('hide'),3300)}
+function status(){const el=$('#status');el.classList.toggle('online',connected);el.classList.toggle('offline',!connected);$('#statusTxt').textContent=connected?'Ready to play':'Needs internet';}
+// All game rules run in the host's browser. PeerJS cloud performs the handshake;
+// game data travels between browsers through encrypted WebRTC data connections.
+const MOVES=['rock','paper','scissors'], BEATS={rock:'scissors',paper:'rock',scissors:'paper'};
+const rand=(n=10)=>{const arr=new Uint8Array(n);crypto.getRandomValues(arr);return [...arr].map(x=>(x%36).toString(36)).join('')};
+const newCode=()=>{const alphabet='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',arr=new Uint8Array(5);crypto.getRandomValues(arr);return [...arr].map(n=>alphabet[n%alphabet.length]).join('')};
+function connect(){ // No local server! The PeerJS client is loaded from a CDN.
+ connected=typeof Peer==='function';status();
+ if(!connected)toast('Multiplayer service failed to load. Check internet or school network filters.');
+}
+function discardPeer(){
+ clearTimeout(linkTimeout);clearTimeout(roundTimer);
+ if(guestConn){try{guestConn.close()}catch(e){}guestConn=null;}
+ for(const conn of hostLinks.values()){try{conn.close()}catch(e){}}
+ hostLinks.clear();
+ if(peer){try{peer.destroy()}catch(e){}peer=null;}
+ hostRoom=null;awaitingHost=false;
+}
+function safeName(v){return String(v||'').trim().replace(/[<>\x00-\x1f]/g,'').slice(0,18)}
+function send(type,fields={}){
+ if(!connected){toast('Online connection unavailable. Check internet access.');return;}
+ if(type==='host'){startHosting(fields.name);return;}
+ if(type==='join'){startJoining(fields.name,fields.code);return;}
+ if(hostRoom){hostCommand({type,...fields},'HOST');return;}
+ if(guestConn&&guestConn.open){try{guestConn.send({type,...fields})}catch(e){toast('Connection interrupted.')}}
+ else toast('Still connecting to the host.');
+}
+function makePeer(id){return id?new Peer(id,{debug:0}):new Peer({debug:0})}
+function startHosting(name,retry=0){
+ discardPeer();const code=newCode();awaitingHost=true;
+ try{peer=makePeer('throw-chromebook-v2-'+code.toLowerCase())}
+ catch(e){formError='Could not start WebRTC on this browser.';setView('form');return;}
+ const activePeer=peer;
+ peer.on('open',()=>{
+   if(activePeer!==peer)return;
+   awaitingHost=false;
+   const hostPlayer={id:'HOST',name:safeName(name),score:0,choice:null,auto:false,delta:0,wins:0,losses:0,ties:0,vote:false,online:true};
+   hostRoom={code,players:new Map([['HOST',hostPlayer]]),hostId:'HOST',round:0,phase:'lobby',deadline:0,reason:''};
+   onServer({type:'session',room:code,token:'host',id:'HOST'}); broadcast();
+ });
+ peer.on('connection',c=>{
+   if(!hostRoom){c.on('open',()=>{c.send({type:'error',message:'Host is preparing the room.'});c.close()});return;}
+   c.on('open',()=>{});
+   c.on('data',msg=>hostFromGuest(c,msg));
+   c.on('close',()=>guestDisconnected(c));
+   c.on('error',()=>guestDisconnected(c));
+ });
+ peer.on('error',e=>{
+   if(activePeer!==peer)return;
+   if(e.type==='unavailable-id'&&retry<3){startHosting(name,retry+1);return;}
+   toast('Cannot host: '+(e.type||'network error'));
+   discardPeer();formError='Unable to create an online room. Internet, WebRTC, or the shared PeerJS service may be blocked.';setView('form');
+ });
+ peer.on('disconnected',()=>{if(activePeer===peer)toast('Room signaling disconnected; existing players might continue, but new joins may fail.')});
+}
+function startJoining(name,code){
+ discardPeer();
+ try{peer=makePeer()}catch(e){formError='Your browser could not start WebRTC.';setView('form');return;}
+ const activePeer=peer;
+ peer.on('open',()=>{
+   if(activePeer!==peer)return;
+   let c=peer.connect('throw-chromebook-v2-'+code.toLowerCase(),{reliable:true,serialization:'json'});
+   guestConn=c;
+   linkTimeout=setTimeout(()=>{if(view==='waiting'&&activePeer===peer){formError='Connection timed out. Check the code and keep the host’s tab open.';discardPeer();setView('form')}},16000);
+   c.on('open',()=>{clearTimeout(linkTimeout);c.send({type:'join',name:safeName(name),code})});
+   c.on('data',msg=>onServer(msg));
+   c.on('close',()=>{if(activePeer!==peer)return;if(view==='end'||view==='home'||view==='form')return;toast('Host disconnected. The room is no longer available.');discardPeer();setView('home')});
+   c.on('error',()=>{if(activePeer!==peer)return;formError='Unable to reach the host. Check room code and connection.';discardPeer();setView('form')});
+ });
+ peer.on('error',e=>{
+   if(activePeer!==peer)return;
+   formError=e.type==='peer-unavailable'?'Room not found. Keep the host tab open and confirm the code.':'Network connection failed ('+(e.type||'unknown')+'). School Wi-Fi can block peer-to-peer games.';
+   toast(formError);discardPeer();setView('form');
+ });
+}
+function hostFromGuest(c,msg){
+ if(!hostRoom||!msg||typeof msg!=='object')return;
+ if(msg.type==='join'){
+   if(hostRoom.phase!=='lobby'){c.send({type:'error',message:'That match already started.'});return;}
+   if(hostRoom.players.size>=12){c.send({type:'error',message:'This room is full (12 players).'});return;}
+   const name=safeName(msg.name);
+   if(name.length<2){c.send({type:'error',message:'Please enter a name with at least 2 characters.'});return;}
+   if([...hostRoom.players.values()].some(p=>p.name.toLowerCase()===name.toLowerCase())){c.send({type:'error',message:'That nickname is already taken.'});return;}
+   const id='G'+rand(10);c._throwPlayer=id;
+   const pl={id,name,score:0,choice:null,auto:false,delta:0,wins:0,losses:0,ties:0,vote:false,online:true};
+   hostRoom.players.set(id,pl);hostLinks.set(id,c);
+   c.send({type:'session',room:hostRoom.code,id,token:id});broadcast();return;
+ }
+ const playerId=c._throwPlayer;
+ if(!playerId||!hostRoom.players.has(playerId))return;
+ hostCommand(msg,playerId);
+}
+function guestDisconnected(c){
+ const id=c._throwPlayer;if(!id||!hostRoom)return;
+ if(hostLinks.get(id)!==c)return;
+ hostLinks.delete(id);hostRoom.players.delete(id);
+ if(hostRoom.phase==='choosing'&&hostRoom.players.size<2){clearTimeout(roundTimer);finishRound();}
+ if(hostRoom.phase==='reveal'&&hostRoom.players.size<2){clearTimeout(roundTimer);endRoom('Other players disconnected.');}
+ if(hostRoom){checkVotes();broadcast();}
+}
+function hostSnapshot(id){
+ const room=hostRoom;if(!room)return null;
+ const reveal=room.phase==='reveal'||room.phase==='finished';
+ return {type:'state',now:Date.now(),room:room.code,phase:room.phase,round:room.round,hostId:'HOST',deadline:room.deadline,
+   voteCount:[...room.players.values()].filter(p=>p.vote).length,reason:room.reason,yourId:id,
+   players:[...room.players.values()].map(p=>({id:p.id,name:p.name,score:p.score,vote:p.vote,online:true,
+     picked:!!p.choice,move:reveal||p.id===id?p.choice:null,
+     auto:reveal?p.auto:false,delta:reveal?p.delta:0,wins:reveal?p.wins:0,losses:reveal?p.losses:0,ties:reveal?p.ties:0}))};
+}
+function broadcast(){
+ if(!hostRoom)return;
+ onServer(hostSnapshot('HOST'));
+ for(const [id,c] of hostLinks)if(c.open){try{c.send(hostSnapshot(id))}catch(e){}}
+}
+function startRound(){
+ if(!hostRoom||hostRoom.phase==='finished')return;
+ if(hostRoom.players.size<2){endRoom('The other players left.');return;}
+ clearTimeout(roundTimer);hostRoom.round++;hostRoom.phase='choosing';hostRoom.deadline=Date.now()+3000;
+ for(const p of hostRoom.players.values()){p.choice=null;p.auto=false;p.delta=0;p.wins=0;p.losses=0;p.ties=0;}
+ broadcast();roundTimer=setTimeout(finishRound,3000);
+}
+function finishRound(){
+ if(!hostRoom||hostRoom.phase!=='choosing')return;
+ clearTimeout(roundTimer);hostRoom.phase='reveal';hostRoom.deadline=Date.now()+4700;
+ const players=[...hostRoom.players.values()];
+ for(const p of players){if(!p.choice){p.choice=MOVES[Math.floor(Math.random()*3)];p.auto=true;}p.delta=0;p.wins=0;p.losses=0;p.ties=0;}
+ for(let i=0;i<players.length;i++)for(let j=i+1;j<players.length;j++){
+   let a=players[i],b=players[j];
+   if(a.choice===b.choice){a.ties++;b.ties++;}
+   else if(BEATS[a.choice]===b.choice){a.delta++;b.delta--;a.wins++;b.losses++;}
+   else{a.delta--;b.delta++;a.losses++;b.wins++;}
+ }
+ for(const p of players)p.score+=p.delta;
+ broadcast();roundTimer=setTimeout(()=>{if(hostRoom?.phase==='reveal')startRound()},4700);
+}
+function endRoom(reason='Everyone voted to finish.'){
+ if(!hostRoom||hostRoom.phase==='finished')return;
+ clearTimeout(roundTimer);hostRoom.phase='finished';hostRoom.deadline=0;hostRoom.reason=reason;broadcast();
+}
+function checkVotes(){if(hostRoom?.phase!=='finished'&&hostRoom?.players.size&&[...hostRoom.players.values()].every(p=>p.vote))endRoom()}
+function hostCommand(msg,id){
+ if(!hostRoom||!msg||typeof msg.type!=='string')return;
+ const player=hostRoom.players.get(id);if(!player)return;
+ switch(msg.type){
+ case 'start':if(id==='HOST'&&hostRoom.phase==='lobby'&&hostRoom.players.size>=2)startRound();break;
+ case 'pick':if(hostRoom.phase==='choosing'&&Date.now()<hostRoom.deadline&&MOVES.includes(msg.move)){player.choice=msg.move;broadcast();}break;
+ case 'vote':if(hostRoom.phase!=='finished'){player.vote=!player.vote;checkVotes();if(hostRoom?.phase!=='finished')broadcast();}break;
+ case 'leave':
+   if(id==='HOST'){for(const c of hostLinks.values()){if(c.open)c.send({type:'error',message:'The host left, so the room closed.'});}discardPeer();}
+   else {const c=hostLinks.get(id);hostLinks.delete(id);hostRoom.players.delete(id);if(c){try{c.send({type:'left'});c.close()}catch(e){}}if(hostRoom.players.size<2&&hostRoom.phase!=='lobby')endRoom('Other players left.');else{checkVotes();broadcast();}}
+   break;
+ }
+}
+function onServer(m){
+  if(m.type==='session'){mySession={room:m.room,token:m.token,id:m.id};sessionSet(SESSION,JSON.stringify(mySession));manuallyLeft=false;return;}
+  if(m.type==='left'){mySession=null;sessionRemove(SESSION);roomState=null;setView('home');return;}
+  if(m.type==='error'){
+    if(m.message?.includes('previous session has expired')){mySession=null;sessionRemove(SESSION);roomState=null;setView('home');return;}
+    formError=m.message;toast(m.message);if(view==='waiting')setView('form');else if(view==='form')render();return;
+  }
+  if(m.type==='state'){
+    if(m.now)clockOffset=m.now-Date.now();
+    const prevPhase=roomState?.phase,prevRound=roomState?.round;
+    roomState=m;
+    if(m.phase==='finished'){if(view!=='end'){setView('end');sound(630,'sine',.25)}else updateEnd();return;}
+    const desired=m.phase==='lobby'?'lobby':'game';
+    if(desired!==view)setView(desired);else if(desired==='lobby'){render();}else if(prevPhase!==m.phase||prevRound!==m.round){lastChosen=null;render();if(m.phase==='choosing')sound(800,'sine',.12);if(m.phase==='reveal')sound(450,'triangle',.14);}
+    else {refreshLive();}
+  }
+}
+function setView(v){view=v;render();}
+function getMe(){return roomState?.players.find(p=>p.id===roomState.yourId);}
+function scoreText(n){return n>0?'+'+n:String(n)}
+function scoreClass(n){return n>0?'positive':n<0?'negative':'neutral'}
+function sortedPlayers(){return [...(roomState?.players||[])].sort((a,b)=>b.score-a.score || a.name.localeCompare(b.name))}
+function playerList(){return sortedPlayers().map((p,i)=>`<div class="leaderrow"><span class="rank">${i+1}.</span><span class="leadname ${p.id===roomState.yourId?'you':''}">${esc(p.name)}${p.id===roomState.yourId?' (you)':''}</span><span class="leadscore">${scoreText(p.score)}</span></div>`).join('')}
+function voteBar(lobby=false){const me=getMe();const count=roomState?.voteCount||0,total=roomState?.players.length||0;return `<div class="votebar"><div><div class="lefttext">End match together</div><div class="sub">${count} of ${total} players voted · Unanimous vote required</div></div><button id="vote" class="btn small ${me?.vote?'vote-active':'danger'}">${me?.vote?'✓ Voted to end':'Vote to end'}</button></div>`}
+function home(){return `<div class="view homegrid"><section><div class="eyebrow">THE THREE-SECOND PARTY GAME</div><h1 class="display">Three choices.<br><em>Zero chill.</em></h1><p class="subtitle">Rock. Paper. Scissors. Against everyone in the room, all at once. Three seconds to choose, then a satisfying reveal. No apps or game server to install.</p><div class="actions"><button class="btn primary" data-go="mode">Play with friends <span class="arrow">↗</span></button><button class="btn" data-settings="1">How it works</button></div></section><div class="demo" aria-label="Rock paper scissors illustrations"><div class="mini-card">${iconPaths.rock}<span>Rock</span></div><div class="mini-card">${iconPaths.paper}<span>Paper</span></div><div class="mini-card">${iconPaths.scissors}<span>Scissors</span></div><span class="float-tag">little hands, big decisions ✳</span></div></div>`}
+function modes(){return `<div class="view section center"><div class="eyebrow">STEP 01 — GET TOGETHER</div><h1>How are we playing?</h1><p class="hintline">Host a room or join friends using a five-character code. Everyone opens the same HTML file in Chrome with internet access.</p><div class="modegrid"><button class="modecard" data-mode="host"><span class="bubble">✳</span><b>Create a room</b><p>Get a private code and invite the group.</p></button><button class="modecard" data-mode="join"><span class="bubble">↗</span><b>Join a room</b><p>Have a code? Jump into the lobby.</p></button></div><button class="underlink" data-go="home">← Back to home</button></div>`}
+function form(){return `<div class="view section center"><div class="eyebrow">STEP 02 — SAY HELLO</div><h1>${mode==='host'?'What should we call you?':'Find your people.'}</h1><p class="hintline">Just a nickname. No account, sign-in, or setup required.</p><form id="joinform" class="panel formpanel">${mode==='join'?`<div class="field"><label for="code">Five-character room code</label><input id="code" name="code" class="code" required maxlength="5" minlength="5" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="ABCDE" value="${esc(draftCode)}"></div>`:''}<div class="field"><label for="nick">Your name</label><input id="nick" name="nick" required minlength="2" maxlength="18" spellcheck="false" autocomplete="nickname" placeholder="e.g. Moonwalker" value="${esc(storageGet('throw-nickname')||'')}"></div><div class="errorline" id="formerr">${esc(formError)}</div><button type="submit" class="btn primary full">${mode==='host'?'Create lobby':'Join lobby'} →</button></form><button class="underlink" data-go="mode">← Go back</button></div>`}
+function lobby(){const s=roomState;if(!s)return `<div class="view waiting"><div class="dots">•••</div><p>Loading your room…</p></div>`;const amHost=s.hostId===s.yourId;
+ return `<div class="view"><section class="roomhead"><div><div class="eyebrow" style="margin-bottom:8px">THE WAITING ROOM</div><h1>Gather your crew.</h1><p>${amHost?'You’re hosting. Let the room fill up.':'Your host will start when everyone is ready.'}</p></div><div class="badge">PRIVATE ROOM</div></section><section class="lobbygrid"><div class="panel joincode"><span class="tinylabel">YOUR ROOM CODE</span><div class="bigcode">${esc(s.room)}</div><button class="btn small soft" id="copy">Copy invite code ↗</button><span style="font-size:11px;color:#97a9b9">Share this code with your friends</span></div><div class="panel memberpanel"><h3>Players <span style="color:#9aaebf">(${s.players.length}/12)</span></h3><div class="memberlist">${s.players.map(p=>`<div class="member"><span class="avatar">${esc(p.name.slice(0,1).toUpperCase())}</span><div class="name">${esc(p.name)} ${p.id===s.yourId?'<span style="color:#8fa4b7">(you)</span>':''}</div><span class="role">${!p.online?'<span class="muted">OFFLINE</span>':p.id===s.hostId?'HOST':'READY'}</span></div>`).join('')}</div></div></section><div class="lobbybottom"><button class="btn small" id="leave">← Leave lobby</button><div style="display:flex;align-items:center;gap:12px"><p>${amHost?(s.players.length<2?'Waiting for at least 2 players':'Everyone here?'):'Waiting for host…'}</p>${amHost?`<button class="btn primary" id="start" ${s.players.length<2?'disabled':''}>Start match →</button>`:''}</div></div><div style="max-width:850px;margin:auto">${voteBar(true)}</div></div>`;
+}
+function choiceCard(move,key){return `<button class="pick ${getMe()?.move===move?'chosen':''}" data-pick="${move}" aria-label="Choose ${move}" ${!connected?'disabled':''}>${iconPaths[move]}<b>${move[0].toUpperCase()+move.slice(1)}</b>${prefs.tips?`<small>PRESS ${key}</small>`:''}</button>`}
+function choosePanel(){const me=getMe();return `<div class="panelinner"><div class="step">YOUR MOVE · ROUND ${roomState.round}</div><h2 class="pick-title">Make your move.</h2><p class="pick-sub">You've got three seconds. Trust your instincts.</p><div class="picks">${choiceCard('rock','R')}${choiceCard('paper','P')}${choiceCard('scissors','S')}</div><div class="choicehint" id="choicehint">${me?.picked?'✓ Locked in. You can still change your pick until the timer ends.':'Every player chooses in secret. No peeking.'}</div></div>`}
+function revealPanel(){const s=roomState;const p=s.players;return `<div class="panelinner"><div class="step">ROUND ${s.round} · THE REVEAL</div><h2 class="pick-title">Cards on the table.</h2><p class="pick-sub">+1 for each player you beat. −1 for each player who beats you. Ties = 0.</p><div class="resultgrid">${p.map(x=>`<div class="resultcard ${x.id===s.yourId?'youcard':''}">${x.auto?'<span class="autopick">AUTO</span>':''}${iconPaths[x.move]||''}<strong>${esc(x.name)}${x.id===s.yourId?' (you)':''}</strong><span>${esc(x.move||'').toUpperCase()}</span><span class="diff ${scoreClass(x.delta)}">${scoreText(x.delta)} pts</span><span>${x.wins} won · ${x.losses} lost · ${x.ties} tied</span></div>`).join('')}</div><div class="choicehint">Next round starts automatically…</div></div>`}
+function game(){if(!roomState)return '';const s=roomState,choosing=s.phase==='choosing';return `<div class="view match"><div class="gamebar"><div><div class="eyebrow" style="margin-bottom:4px">ROOM ${esc(s.room)}</div><div class="round">ROUND ${s.round} · ${s.players.length} PLAYERS</div></div><div class="timerchip"><span class="timerdot" id="timerdot"></span><div><small id="timerlabel">${choosing?'CHOOSE IN':'NEXT ROUND'}</small><div><b id="timer">${choosing?'3.0':'4.7'}</b><span style="color:#7994ad;font-size:12px">s</span></div></div></div></div><div class="gamegrid"><div class="playpanel">${choosing?choosePanel():revealPanel()}</div><aside class="sidepanel"><h3>↗ Live standings</h3><div id="standings">${playerList()}</div><div style="background:#e9f2f9;border:1px solid #d7e6f1;padding:12px;border-radius:12px;margin-top:15px;font-size:11px;line-height:1.55;color:#708da8">Every throw is compared with <b>each opponent</b>. Your score can go negative.</div></aside></div>${voteBar()}</div>`}
+function ending(){if(!roomState)return '';const ordered=sortedPlayers(),winner=ordered[0],me=getMe();return `<div class="view ending"><div class="panel endpanel"><div class="eyebrow" style="margin-bottom:14px">FINAL RESULTS</div><div class="trophy">✧ 🏆 ✧</div><h1 style="font-size:44px;letter-spacing:-2px;margin:12px 0 8px">That's a wrap.</h1><p class="hintline" style="margin-bottom:8px">${esc(roomState.reason||'The match is complete.')}</p><div style="font-size:13px;color:#6684a1">${winner?'Top thrower: '+esc(winner.name):'Great game!'} · ${roomState.round} rounds</div><div class="final-list">${ordered.map((p,i)=>`<div class="final-row"><span class="medal">${['🥇','🥈','🥉'][i]||'#'+(i+1)}</span><span class="who">${esc(p.name)} ${p.id===roomState.yourId?'<span style="font-size:11px;color:#7a9bb9">(you)</span>':''}</span><span class="points">${scoreText(p.score)} <small style="font-size:11px;color:#8ea4b6">pts</small></span></div>`).join('')}</div><p class="endnote">Press Enter to head back home.</p><button class="btn primary full" id="finish">Back to home ↗</button></div></div>`}
+function render(){
+  if(view==='home')root.innerHTML=home();
+  else if(view==='mode')root.innerHTML=modes();
+  else if(view==='form')root.innerHTML=form();
+  else if(view==='lobby')root.innerHTML=lobby();
+  else if(view==='game')root.innerHTML=game();
+  else if(view==='end')root.innerHTML=ending();
+  else root.innerHTML='<div class="view waiting"><div class="dots">•••</div><h2>Finding your people…</h2><p>Connecting to the room.</p></div>';
+  root.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{formError='';setView(b.dataset.go)}));
+  root.querySelectorAll('[data-settings]').forEach(b=>b.addEventListener('click',openSettings));
+  root.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;formError='';setView('form')}));
+  root.querySelector('#joinform')?.addEventListener('submit',e=>{
+    e.preventDefault();const name=$('#nick').value.trim(),code=$('#code')?.value.trim().toUpperCase();
+    if(name.length<2){formError='Please use at least 2 characters.';render();return;}
+    if(mode==='join'&&!/^[A-Z2-9]{5}$/.test(code)){formError='Enter the 5-character invite code.';draftCode=code||'';render();return;}
+    if(!connected){formError='Server offline. Start the server or check your connection.';render();return;}
+    storageSet('throw-nickname',name);draftCode=code||'';send(mode,{name,code});setView('waiting');
+  });
+  root.querySelector('#copy')?.addEventListener('click',async()=>{
+    const code=roomState.room;try{await navigator.clipboard.writeText(code);toast('Room code copied!')}catch(e){toast('Your room code is '+code)}sound(620)});
+  root.querySelector('#start')?.addEventListener('click',()=>send('start'));
+  root.querySelector('#vote')?.addEventListener('click',()=>{send('vote');sound(390)});
+  root.querySelector('#leave')?.addEventListener('click',leave);
+  root.querySelector('#finish')?.addEventListener('click',leave);
+  root.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('click',()=>pick(b.dataset.pick)));
+  refreshLive();
+}
+function leave(){manuallyLeft=true;if(hostRoom){hostCommand({type:'leave'},'HOST');}else if(guestConn?.open){try{guestConn.send({type:'leave'})}catch(e){}}discardPeer();mySession=null;sessionRemove(SESSION);roomState=null;setView('home');}
+function pick(move){if(view!=='game'||roomState?.phase!=='choosing')return;const time=roomState.deadline-(Date.now()+clockOffset);if(time<=0)return;lastChosen=move;send('pick',{move});sound({rock:260,paper:500,scissors:740}[move],'triangle',.08);
+  root.querySelectorAll('[data-pick]').forEach(b=>b.classList.toggle('chosen',b.dataset.pick===move));
+  const hint=root.querySelector('#choicehint');if(hint)hint.textContent='✓ Locked in. You can change your pick until time runs out.';
+}
+function refreshLive(){
+  if(view==='lobby'&&roomState){
+    const v=$('.votebar');if(v){v.outerHTML=voteBar(true);$('#vote')?.addEventListener('click',()=>{send('vote');sound(390)});}
+    return;
+  }
+  if(view==='game'&&roomState){
+    const standings=$('#standings');if(standings)standings.innerHTML=playerList();
+    const v=$('.votebar');if(v){v.outerHTML=voteBar();$('#vote')?.addEventListener('click',()=>{send('vote');sound(390)});}
+    const me=getMe();
+    if(me&&roomState.phase==='choosing'){
+      root.querySelectorAll('[data-pick]').forEach(b=>b.classList.toggle('chosen',b.dataset.pick===me.move));
+      const hint=$('#choicehint');if(hint&&me.picked)hint.textContent='✓ Locked in. You can change your pick until time runs out.';
+    }
+  }
+}
+function updateEnd(){/* final standings stay stable */}
+function tick(){if(view!=='game'||!roomState)return;
+ const remaining=Math.max(0,(roomState.deadline-Date.now()-clockOffset)/1000);
+ const timer=$('#timer');if(timer)timer.textContent=remaining.toFixed(1);
+ const dot=$('#timerdot');if(dot)dot.classList.toggle('urgent',remaining<1.05);
+}
+function openSettings(){const p=$('#settingsOverlay');p.classList.remove('hide');$('#soundToggle').checked=prefs.sound;$('#motionToggle').checked=prefs.reduce;$('#tipsToggle').checked=prefs.tips;}
+function closeSettings(){prefs.sound=$('#soundToggle').checked;prefs.reduce=$('#motionToggle').checked;prefs.tips=$('#tipsToggle').checked;storageSet(KEY,JSON.stringify(prefs));document.body.style.setProperty('scroll-behavior',prefs.reduce?'auto':'smooth');$('#settingsOverlay').classList.add('hide');if(view==='game')render();}
+$('#settingsOpen').addEventListener('click',openSettings);$('#settingsClose').addEventListener('click',closeSettings);$('#settingsDone').addEventListener('click',closeSettings);
+$('#settingsOverlay').addEventListener('click',e=>{if(e.target.id==='settingsOverlay')closeSettings()});
+document.addEventListener('keydown',e=>{
+  if(!$('#settingsOverlay').classList.contains('hide')){if(e.key==='Escape')closeSettings();return;}
+  if(document.activeElement?.matches('input'))return;
+  if(view==='game'&&roomState?.phase==='choosing'){
+    const moves={r:'rock',p:'paper',s:'scissors'};if(moves[e.key.toLowerCase()]){e.preventDefault();pick(moves[e.key.toLowerCase()])}
+  }
+  if(view==='end'&&e.key==='Enter')leave();
+});
+setInterval(tick,40);render();status();connect();
+})();
+</script></body></html>
